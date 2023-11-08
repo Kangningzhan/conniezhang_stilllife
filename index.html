@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<head>
   <style>
     * { box-sizing: border-box; }
 
@@ -27,20 +29,31 @@
     }
 
     .caf-middle {
-      width: 70%;
+      width: 72%;
       height: 55%;
       background: linear-gradient(90deg, #FFC800 0%, #FF9600 24%, #FF6400 100%);
       position: absolute;
       top: 14%;
-      left: 15%;
+      left: 14%;
       z-index: 5;
       transform: perspective(300px) rotateX(-30deg);
+    }
+
+    .caf-bottom {
+      width: 70%;
+      height: 40%;
+      background: linear-gradient(90deg, silver 0%, gray 100%);
+      position: absolute;
+      top: 58%; 
+      left: 15%;
+      transform: perspective(300px) rotateX(30deg); 
+      z-index: 5;
     }
 
     .bustello {
       width: 170px;
       height: 230px;
-      background-color: yellow; 
+      background-color: yellow;
       border: 1px solid red;
     }
 
@@ -111,6 +124,7 @@
   <div class="frame">
     <div class="cafetera">
       <div class="caf-middle"></div>
+      <div class="caf-bottom"></div>
     </div>
     <div class="bustello left-can"></div>
     <div class="bustello right-can"></div>
@@ -128,4 +142,5 @@
     </div>
   </div>
 </body>
+
 
