@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+
   <style>
     * { box-sizing: border-box; }
 
@@ -39,6 +38,18 @@
       transform: perspective(300px) rotateX(-30deg);
     }
 
+  .handle {
+  position: absolute;
+  width: 25px;
+  height: 150px;
+  background: linear-gradient(to bottom, #000, #333);
+  top: 0%;
+  left: -30%;
+  border-radius: 0 0 50px 50px;
+  transform: rotate(-90deg);
+  z-index: 10;
+}
+    
     .caf-bottom {
       width: 70%;
       height: 40%;
@@ -119,11 +130,13 @@
       z-index: -1;
       border: 1px solid black;
     }
-  </style>
+   </style>
+</head>
 <body>
   <div class="frame">
     <div class="cafetera">
       <div class="caf-middle"></div>
+      <div class="handle"></div>
       <div class="caf-bottom"></div>
     </div>
     <div class="bustello left-can"></div>
@@ -135,12 +148,11 @@
       <div class="stripes"></div>
     </div>
     <div class="cup bottom-cup">
-      <div class="triangle">
+      <div class "triangle">
         <div class="star"></div>
       </div>
       <div class="stripes"></div>
     </div>
   </div>
 </body>
-
-
+</html>
